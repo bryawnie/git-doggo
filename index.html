@@ -16,10 +16,38 @@
 				font-family: pinkChicken;
 				src: url(assets/webfonts/pinkchicken.ttf);
 			}
+			@font-face {
+				font-family: helloValentina;
+				src: url(assets/webfonts/hello-valentina.ttf);
+			}
+			.command-title {
+				color: black;
+				font-family: helloValentina, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				font-size: 6rem;
+				font-weight: bold;
+				margin: 0 10px 10px 10px;
+			}
+			.command-description {
+				color: darkgray;
+				font-family: pinkChicken, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				font-size: 1.8rem;
+				font-weight: bold;
+				line-height: 1.8rem;
+				margin: 0 10px 10px 10px;
+				max-width: 500px;	
+				padding-top: 10px;
+				text-align: left;	
+			}
 			.description-text {
 				font-size: 28px;
 				color: darkgray;
 				margin-bottom: 10px;
+			}
+			.flex-container {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-bottom: 0 !important;
 			}
 			.pink {
 				color: #ff66ff !important;
@@ -31,12 +59,16 @@
 			.pull-origin {
 				max-width: 700px;
 				width: 98%;
+				margin: 20px 0 20px;
 			}
 			.text-pinkChicken {
 				font-family: pinkChicken, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 			}
 			.yellow {
-				color: #ebd25b;
+				color: #ebd25b !important;
+			}
+			.command-title p, .command-description p, .description-text p {
+				margin: 20px;
 			}
 		</style>
 	</head>
@@ -92,8 +124,16 @@
 
 						<!-- First Section -->
 							<section id="pull" class="main special">
-								<header class="major" style="margin-bottom: 10px;">
-									<img src="images/pull/title.png" style="width: 75%; min-width: 350px;"/>
+								<header class="major flex-container">
+									<div class="command-title">
+										git <b class="pink">pull</b>
+									</div>
+									<div class="command-description">
+										<p>
+											git pull actualiza el head actual con los últimos cambios desde el
+											repositorio remoto.
+										</p>
+									</div>
 								</header>
 								<div class="content">
 									<div id="pull-start-branches">
@@ -133,7 +173,8 @@
 								</ul> -->
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="images/pull/git-pull.png" class="button" target="_blank">Descargar PNG</a></li>
+										<li><a href="resources/Pull.png" class="button" target="_blank">Descargar PNG</a></li>
+										<li><a href="resources/Pull.pdf" class="button" target="_blank">Descargar PDF</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -178,7 +219,7 @@
 						<!-- Get Started -->
 							<section id="soon" class="main special">
 								<header class="major">
-									<h2>Proximamente habrá más!</h2>
+									<h2>Próximamente habrá más!</h2>
 								</header>
 								<!-- <footer class="major">
 									<ul class="actions special">
@@ -192,31 +233,25 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<!-- <section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
+						<section>
+							<h2>Sugerencias?</h2>
+							<p>
+								Sería muy genial si pudieras darme una sugerencia sobre cómo mejorar este sitio.
+								O sobre qué contenido podría agregar. Puedes contactarme por mail o telegram ;)
+							</p>
 						</section>
 						<section>
-							<h2>Etiam feugiat</h2>
+							<h2>Contacto</h2>
 							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
 								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
+								<dd>bortiz@dcc.uchile.cl</dd>
 							</dl>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+								<li><a href="https://t.me/bryawnie" target="_blank" class="icon brands fa-telegram alt"><span class="label">@bryawnie</span></a></li>
+								<li><a href="https://instagram.com/bryawnie" target="_blank" class="icon brands fa-instagram alt"><span class="label">@bryawnie</span></a></li>
+								<li><a href="https://github.com/bryalexis" target="_blank" class="icon brands fa-github alt"><span class="label">@bryalexis</span></a></li>
 							</ul>
-						</section> -->
+						</section>
 						<p class="copyright">&copy; GitDoggo. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
