@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
 			@font-face {
@@ -56,6 +57,10 @@
 				max-width: 400px;
 				width: 90%;
 			}
+			.merge-branches {
+				max-width: 490px;
+				width: 90%;
+			}
 			.pull-origin {
 				max-width: 700px;
 				width: 98%;
@@ -79,9 +84,14 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1><i class="fab fa-git-alt"></i> GitDoggo <i class="fa fa-paw"></i></h1>
-						<p style="margin-bottom: 0;">Git explicado con perritos!</p>
+						<!-- <span class="logo"><i class="fab fa-git-alt"></i><img src="images/logo.svg" alt="" /></span> -->
+						<h1>GitDoggo</h1>
+						<p style="margin-bottom: 0;">
+							<i class="fab fa-github" style="margin: 5px;"></i>
+							<i class="fab fa-gitlab" style="margin: 5px;"></i>
+							<i class="fab fa-bitbucket" style="margin: 5px;"></i>
+						</p>
+						<p style="margin-bottom: 0;">Git explicado con perritos</p>
 						<p style="font-size: 12px;">Template diseñado por <a href="https://twitter.com/ajlkn">@ajlkn</a> para <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</header>
 
@@ -106,20 +116,27 @@
 											<h2>Introducción</h2>
 										</header>
 										<p>
-											Holis! En mi tiempo libre estaré subiendo mini ilustraciones describiendo
-											el funcionamiento de los comandos más básicos de <b>Git</b>, ya que a veces
-											tener una idea visual ayuda mucho más que una explicación.
+											Holis! Usar herramientas de versionamiento apaña mucho en la vida computina,
+											pero cuando quise usar git por primera vez estaba un poco confundido de cómo
+											funcionaba todo :(
 										</p>
 										<p>
-											El contenido se encuentra fuertemente inspirado en las ilustraciones de 
+											Para algunos (y me incluyo), tener una idea visual ayuda mucho más que una
+											explicación, así que como mini-proyecto personal quiero intentar subir 
+											de forma ocasional mini ilustraciones describiendo el funcionamiento de los
+											comandos más básicos de <b>Git</b>.
+										</p>
+										<p>
+											La idea (y el contenido mismo) se encuentran fuertemente inspirados en las ilustraciones de 
 											<a href="https://girliemac.com/blog/2017/12/26/git-purr/" target="_blank">@girlie_mac</a>,
 											si no las conocen les invito a revisarlas (están muy cute!).
 										</p>
 										<ul class="actions">
-											<li><a href="https://girliemac.com" target="_blank" class="button">Ir a GirlieMac.com</a></li>
+											<li><a href="https://girliemac.com" target="_blank" class="button">Ir a GirlieMac</a></li>
+											<li><a href="https://learngitbranching.js.org/" target="_blank" class="button">Ir a LearnGitBranching</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="images/profile.jpg" alt="Yo comiendo papitas." /></span>
 								</div>
 							</section>
 
@@ -164,7 +181,7 @@
 							</section>
 
 						<!-- Git Merge -->
-							<section id="pull" class="main special">
+							<section id="merge" class="main special">
 								<header class="major flex-container">
 									<div class="command-title">
 										git <b class="pink">merge</b>
@@ -178,22 +195,22 @@
 								</header>
 								<div class="content">
 									<p class="text-pinkChicken description-text">
-										Estando en la rama corbatitas haremos <b class="pink">git merge</b> master
+										Estando en la rama corbatita haremos <b class="pink">git merge</b> master
 									</p>
 									<div id="pull-start-branches">
-										<img src="images/pull/pull-blacky.png" class="pull-branches"/>
-										<img src="images/pull/pull-blacky.png" class="pull-branches"/>
+										<img src="images/merge/before.png" class="pull-branches"/>
+										<img src="images/merge/after.png" class="merge-branches"/>
 									</div>
 									<p class="text-pinkChicken description-text">
 										Merge es como tener 2 padres y un único hijo resultante, cuando hacemos merge se mezclan los cambios 🙂
 									</p>
 								</div>
-								<!-- <footer class="major">
+								<footer class="major">
 									<ul class="actions special">
-										<li><a href="resources/Pull.png" class="button" target="_blank">Descargar PNG</a></li>
-										<li><a href="resources/Pull.pdf" class="button" target="_blank">Descargar PDF</a></li>
+										<li><a href="resources/Merge.png" class="button" target="_blank">Descargar PNG</a></li>
+										<li><a href="resources/Merge.pdf" class="button" target="_blank">Descargar PDF</a></li>
 									</ul>
-								</footer> -->
+								</footer>
 							</section>
 
 						<!-- Second Section -->
