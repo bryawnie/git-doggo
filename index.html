@@ -24,9 +24,6 @@
 			.command-title {
 				color: black;
 				font-family: helloValentina, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-				font-size: 6rem;
-				font-weight: bold;
-				margin: 0 10px 10px 10px;
 			}
 			.command-description {
 				color: darkgray;
@@ -37,7 +34,6 @@
 				margin: 0 10px 10px 10px;
 				max-width: 500px;	
 				padding-top: 10px;
-				text-align: left;	
 			}
 			.description-text {
 				font-size: 28px;
@@ -53,12 +49,16 @@
 			.pink {
 				color: #ff66ff !important;
 			}
+			.merge-branches {
+				max-width: 490px;
+				width: 90%;
+			}
 			.pull-branches {
 				max-width: 400px;
 				width: 90%;
 			}
-			.merge-branches {
-				max-width: 490px;
+			.rebase-branches {
+				max-width: 560px;
 				width: 90%;
 			}
 			.pull-origin {
@@ -74,6 +74,26 @@
 			}
 			.command-title p, .command-description p, .description-text p {
 				margin: 20px;
+			}
+
+			@media screen and (min-width: 1001px) {
+				.command-description p {
+					text-align: left !important;	
+				}
+				.command-title {
+					font-size: 6rem;
+					margin: 0 10px 10px 10px;
+				}
+			}
+
+			@media screen and (max-width: 1000px) {
+				.command-description p {
+					text-align: center !important;	
+				}
+				.command-title {
+					font-size: 20vw;
+					margin: 0;
+				}
 			}
 		</style>
 	</head>
@@ -101,6 +121,7 @@
 							<li><a href="#intro" class="active">Introducción</a></li>
 							<li><a href="#pull">Git Pull</a></li>
 							<li><a href="#merge">Git Merge</a></li>
+							<li><a href="#merge">Git Rebase</a></li>
 							<li><a href="#soon">Pronto Más :)</a></li>
 						</ul>
 					</nav>
@@ -212,6 +233,45 @@
 									</ul>
 								</footer>
 							</section>
+
+						<!-- Git Rebase -->
+						<section id="rebase" class="main special">
+							<header class="major flex-container">
+								<div class="command-title">
+									git <b class="pink">rebase</b>
+								</div>
+								<div class="command-description">
+									<p style="margin-bottom: 0;">
+										git rebase cambia el commit de partida de la rama actual
+										incorporando los cambios.
+									</p>
+									<p class="text-pinkChicken description-text" style="font-size: 20px; margin-top: 0;">
+										<< Cambia la <b class="pink">base</b> de la rama >>
+									</p>
+								</div>
+							</header>
+							<div class="content">
+								<p class="text-pinkChicken description-text">
+									Estando en la rama corbatita haremos <b class="pink">git rebase</b> master
+								</p>
+								<div id="pull-start-branches">
+									<img src="images/rebase/before.png" class="pull-branches"/>
+									<img src="images/rebase/after.png" class="rebase-branches"/>
+								</div>
+								<p class="text-pinkChicken description-text">
+									<b class="pink">Rebase</b> añade todo los cambios nuevos al inicio de la rama.
+								</p>
+								<p class="text-pinkChicken description-text">
+									Permite tener un historial de commits más limpio 😉.
+								</p>
+							</div>
+							<footer class="major">
+								<ul class="actions special">
+									<li><a href="resources/Rebase.png" class="button" target="_blank">Descargar PNG</a></li>
+									<li><a href="resources/Rebase.pdf" class="button" target="_blank">Descargar PDF</a></li>
+								</ul>
+							</footer>
+						</section>
 
 						<!-- Second Section -->
 							<!-- <section id="second" class="main special">
